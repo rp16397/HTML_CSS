@@ -1,0 +1,115 @@
+/* variables */
+
+:root{
+--softblue : hsl(215, 51%, 70%);
+--cyan : hsl(178, 100%, 50%);
+--main-bg : hsl(217, 54%, 11%);
+--card-bg : hsl(216, 50%, 16%);
+--line : hsl(215, 32%, 27%);
+--white : hsl(0, 0%, 100%);
+}
+/* style for all */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+/* body sytle */
+
+body{
+    background-color: var(--main-bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* cards style */
+
+.card{
+    width: 400px;
+    background-color: var(--card-bg);
+    color: var(--softblue );
+    padding: 25px;
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+    position: relative;
+}
+.card h2{
+    font-weight: 600;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 28px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+.card h2:hover{
+    color: var(--cyan);
+}
+.nft-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 15px 0;
+}
+hr{
+    background-color: var(--line);
+    opacity: 0.1;
+}
+.price div{
+    color: var(--cyan);
+}
+.price, .time{
+    display: flex;
+}
+.price img, .time img{
+    height: 26px;
+    width: 26px;
+    margin-right: 8px;
+}
+.over{
+    background-color: var(--cyan);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    height: 350px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.avt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avt img{
+    width: 50px;
+    margin-right: 20px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.name{
+    color: var(--white);
+    font-weight: 600;   
+    transition: 0.5s;
+}
+/* all hover style */
+
+.over:hover{
+    opacity: 0.6;
+}
+.name:hover{
+    color: var(--cyan);
+}
